@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 // import Accordion from "./views/components/Accordion";
-// import SearchBar from "./views/components/SearchBar";
-import Dropdown from "./views/components/Dropdown";
+import SearchBar from "./views/components/SearchBar";
+// import Dropdown from "./views/components/Dropdown";
 
 // const items = [
 //   {
@@ -26,15 +26,15 @@ const options = [
 ];
 
 function App() {
-  const [selected, setSelected] = useState(options[0]);
-  const [showDropdown, setShowDropdown] = useState(true);
+  // const [selected, setSelected] = useState(options[0]);
+  // const [showDropdown, setShowDropdown] = useState(true);
 
   return (
     <div>
       <br />
       {/* <Accordion items={items} /> */}
-      {/* <SearchBar /> */}
-      <button onClick={() => setShowDropdown(!showDropdown)}>
+      <SearchBar />
+      {/* <button onClick={() => setShowDropdown(!showDropdown)}>
         Toggle Dropdown
       </button>
       {showDropdown ? (
@@ -43,7 +43,7 @@ function App() {
           selected={selected}
           onSelectedChange={setSelected}
         />
-      ) : null}
+      ) : null} */}
     </div>
   );
 }
